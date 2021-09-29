@@ -77,7 +77,6 @@ LDFLAGS  += -mcpu=cortex-m0plus -mthumb
 LDFLAGS  += -fno-common -ffunction-sections -fdata-sections -fwhole-program
 LDFLAGS  += -mno-unaligned-access
 LDFLAGS  += -Wl,--gc-sections -Wl,-Map,debug/app.map
-LDFLAGS  += --specs=nano.specs
 
 ifeq ($(TARGET_NAME),TARGET_NANOX)
 CFLAGS   += -frwpi
